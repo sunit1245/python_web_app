@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="about">
+   <form action="/about/" method = "POST">
+     <label for="search" style = "color: black">Word: </label>
+     <input type="text" name="search" id="search" placeholder = "Enter word">
+     <input style = "color: black" type="submit" value="Search">
+     <p style = "color: black">Showing results for: {{bot[0]}}</p>
+     <p style = "color: black">Results: {{bot[1]}}</p>
+   </form>
+</div>
+{% endblock %}
